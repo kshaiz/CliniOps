@@ -24,11 +24,20 @@
 
   h1 {
     color: var(--brand-dark-blue);
+    text-align: center;
   }
 
   .co-heading1 {
     color: var(--brand-dark-blue-alt);
   }
+}
+
+.co-app-suite,
+.co-result,
+.co-testimonial,
+.co-news,
+.co-award {
+  padding: 100px 0;
 }
 
 .co-feature {
@@ -152,7 +161,12 @@
 }
 
 .co-award {
+  padding: 100px 0;
   background-color: #4F6C7B;
+
+  h1 {
+    color: var(--white);
+  }
 }
 
 .co-award__tile {
