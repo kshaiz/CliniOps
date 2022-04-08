@@ -1,0 +1,637 @@
+$global-size: ("small",
+  "medium",
+  "large",
+  "x-large"
+);
+
+/* Icons ==================================================================== */
+$global-icon-list: ("done",
+  "add",
+  "approve",
+  "archive",
+  "attach",
+  "chat",
+  "cloud",
+  "cloud--download",
+  "cloud--import",
+  "cloud--upload",
+  "comment",
+  "configure",
+  "copy",
+  "cut",
+  "decline",
+  "delete",
+  "dismiss",
+  "download",
+  "edit",
+  "edit--block",
+  "filter",
+  "filter--active",
+  "filter--disabled",
+  "hide",
+  "import",
+  "mail",
+  "minus",
+  "paste",
+  "plus",
+  "print",
+  "quick",
+  "redo",
+  "refresh",
+  "reject",
+  "remove",
+  "save",
+  "schedule",
+  "search",
+  "setting",
+  "share",
+  "transfer",
+  "undo",
+  "upload",
+  "view",
+  "zoom",
+  "zoom--out",
+  "arrow--up",
+  "up",
+  "arrow--down",
+  "down",
+  "arrow--left",
+  "left",
+  "arrow--right",
+  "right",
+  "arrow--circle--up",
+  "arrow--circle--down",
+  "arrow--circle--left",
+  "arrow--circle--right",
+  "arrow--square--up",
+  "go--up",
+  "arrow--square--down",
+  "go--down",
+  "arrow--square--left",
+  "go--back",
+  "arrow--square--right",
+  "go--forward",
+  "arrow--solid--up",
+  "arrow--solid--down",
+  "arrow--solid--left",
+  "arrow--solid--right",
+  "arrow--solid--circle--up",
+  "arrow--solid--circle--down",
+  "arrow--solid--circle--left",
+  "arrow--solid--circle--right",
+  "arrow--solid--square--up",
+  "arrow--solid--square--down",
+  "arrow--solid--square--left",
+  "arrow--solid--square--right",
+  "caret--up",
+  "caret--down",
+  "caret--left",
+  "caret--right",
+  "caret--circle--up",
+  "caret--circle--down",
+  "caret--circle--left",
+  "caret--circle--right",
+  "caret--square--up",
+  "caret--square--down",
+  "caret--square--left",
+  "caret--square--right",
+  "chevron--up",
+  "chevron--down",
+  "chevron--left",
+  "chevron--right",
+  "chevron--circle--up",
+  "chevron--circle--down",
+  "chevron--circle--left",
+  "chevron--circle--right",
+  "chevron--square--up",
+  "scroll--up",
+  "chevron--square--down",
+  "scroll--down",
+  "chevron--square--left",
+  "scroll--left",
+  "chevron--square--right",
+  "scroll--right",
+  "jump--up",
+  "jump--down",
+  "jump--left",
+  "jump--right",
+  "chevron--double--up",
+  "chevron--double--down",
+  "chevron--double--left",
+  "chevron--double--right",
+  "chevron--double--circle--down",
+  "chevron--double--circle--up",
+  "chevron--double--circle--left",
+  "chevron--double--circle--right",
+  "chevron--double--square--up",
+  "chevron--double--square--down",
+  "chevron--double--square--left",
+  "chevron--double--square--right",
+  "database",
+  "feed",
+  "help",
+  "history",
+  "home",
+  "info",
+  "info--active",
+  "key",
+  "news",
+  "note",
+  "notification",
+  "notification--active",
+  "notification--disabled",
+  "ticket",
+  "tip",
+  "tip--active",
+  "tooltip",
+  "tooltip--active",
+  "wiki",
+  "csv",
+  "doc",
+  "file",
+  "image",
+  "pdf",
+  "ppt",
+  "video",
+  "xls",
+  "xlsx",
+  "collapse",
+  "collapse--all",
+  "column-chooser",
+  "column-chooser--active",
+  "expand",
+  "expand--all",
+  "header-group",
+  "header-group--clear",
+  "sort--ascending",
+  "sort--ascending--secondary",
+  "sort--descending",
+  "sort--descending--secondary",
+  "fast-forward",
+  "fast-forward--active",
+  "fast-rewind",
+  "fast-rewind--active",
+  "forward",
+  "forward--active",
+  "pause",
+  "pause--active",
+  "play",
+  "play--active",
+  "record",
+  "record--active",
+  "rewind",
+  "rewind--active",
+  "slideshow",
+  "stop",
+  "stop--active",
+  "link",
+  "menu",
+  "more--horizontal",
+  "more--vertical",
+  "more",
+  "url",
+  "equal",
+  "not-equal",
+  "greater",
+  "greater-equal",
+  "less",
+  "less-equal",
+  "between",
+  "begin-with",
+  "not-begin-with",
+  "end-with",
+  "not-end-with",
+  "contain",
+  "not-contain",
+  "total",
+  "sub-total",
+  "close",
+  "maximize",
+  "shrink",
+  "move",
+  "pop-out",
+  "dock",
+  "handle",
+  "handle--horizontal",
+  "resize--vertical",
+  "resize--horizontal",
+  "resize--diagnol",
+  "resize--square--vertical",
+  "resize--square--horizontal",
+  "resize--square--diagnol",
+  "expand--vertical",
+  "expand--horizontal",
+  "expand--diagnol",
+  "expand--square--vertical",
+  "expand--square--horizontal",
+  "expand--square--diagnol",
+  "collapse--vertical",
+  "collapse--horizontal",
+  "collapse--diagnol",
+  "collapse--square--vertical",
+  "collapse--square--horizontal",
+  "collapse--square--diagnol",
+  "blocked",
+  "checked",
+  "checked--indeterminate",
+  "critical",
+  "error",
+  "favorite",
+  "flagged",
+  "in-progress",
+  "loading",
+  "locked",
+  "pending",
+  "pinned",
+  "radio",
+  "radio--selected",
+  "success",
+  "unchecked",
+  "unfavorite",
+  "unflagged",
+  "unknown",
+  "unlocked",
+  "unpinned",
+  "warning",
+  "calculate",
+  "calendar",
+  "login",
+  "logout",
+  "address-book",
+  "admin",
+  "system",
+  "user",
+  "user--add",
+  "user--remove",
+  "user-group",
+  "area-chart",
+  "area-chart--active",
+  "bar-chart",
+  "bar-chart--active",
+  "column-chart",
+  "column-chart--active",
+  "donut-chart",
+  "donut-chart--active",
+  "line-chart",
+  "line-chart--active",
+  "pie-chart",
+  "pie-chart--active",
+  "scatter-plot",
+  "scatter-plot--active",
+  "table",
+  "table--active",
+  "institution",
+  "position",
+  "transaction"
+);
+
+$color-name: ("body",
+  "body-inverted",
+  "black",
+  "white",
+  "gray",
+  "gray1",
+  "gray2",
+  "gray3",
+  "gray4",
+  "gray5",
+  "blue",
+  "blue1",
+  "blue2",
+  "blue3",
+  "blue4",
+  "blue5",
+  "green",
+  "green1",
+  "green2",
+  "green3",
+  "green4",
+  "green5",
+  "orange",
+  "orange1",
+  "orange2",
+  "orange3",
+  "orange4",
+  "orange5",
+  "red",
+  "red1",
+  "red2",
+  "red3",
+  "red4",
+  "red5",
+  "yellow",
+  "yellow1",
+  "yellow2",
+  "yellow3",
+  "yellow4",
+  "yellow5",
+  "teal",
+  "teal1",
+  "teal2",
+  "teal3",
+  "teal4",
+  "teal5",
+  "pink",
+  "pink1",
+  "pink2",
+  "pink3",
+  "pink4",
+  "pink5",
+  "purple",
+  "purple1",
+  "purple2",
+  "purple3",
+  "purple4",
+  "purple5",
+  "indigo",
+  "indigo1",
+  "indigo2",
+  "indigo3",
+  "indigo4",
+  "indigo5",
+  "lime",
+  "lime1",
+  "lime2",
+  "lime3",
+  "lime4",
+  "lime5",
+);
+
+/* Colors
+============================================================================= */
+@mixin set-color-variable($color, $context: false, $prefix: false) {
+  @if ($prefix) {
+    --c-#{$prefix}_base: var(--c-#{$color});
+    --c-#{$prefix}_neutral: var(--c-#{$color}_neutral);
+    --c-#{$prefix}_subtle: var(--c-#{$color}_subtle);
+  }
+
+  @else {
+    --c_base: var(--c-#{$color});
+    --c_neutral: var(--c-#{$color}_neutral);
+    --c_subtle: var(--c-#{$color}_subtle);
+  }
+
+  @if ($context) {
+    --c_primary: var(--c-#{$color}_primary, var(--c-#{$color}_neutral));
+    --c_success: var(--c-#{$color}_success, var(--c-#{$color}_neutral));
+    --c_warning: var(--c-#{$color}_warning, var(--c-#{$color}_neutral));
+    --c_critical: var(--c-#{$color}_critical, var(--c-#{$color}_neutral));
+  }
+}
+
+/* UI States ================================================================ */
+@mixin is-disabled {
+  @include user-select(none);
+  cursor: not-allowed !important;
+  opacity: var(--opacity--lower);
+
+  * {
+    cursor: not-allowed;
+  }
+}
+
+/* Clearfix ================================================================= */
+@mixin has-clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Display Styles =========================================================== */
+@mixin has-display--flex--row($size: true) {
+  display: flex;
+  flex-direction: column;
+
+  &.is-align--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.is-align--top {
+    justify-content: flex-start;
+  }
+
+  &.is-align--bottom {
+    justify-content: flex-end;
+  }
+
+  &.is-align--left {
+    align-items: flex-start;
+  }
+
+  &.is-align--right {
+    align-items: flex-end;
+  }
+
+  &.is-align--baseline {
+    justify-content: baseline;
+  }
+
+  @if ($size) {
+    >* {
+      min-height: 0;
+
+      @for $size from 1 through 15 {
+        &.is-size--#{$size} {
+          flex: #{$size};
+        }
+      }
+
+      &.is-size--grow {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        overflow: auto;
+      }
+
+      &.is-size--content {
+        flex: none;
+      }
+    }
+  }
+}
+
+@mixin has-display--flex--column($size: true) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &.is-align--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.is-align--top {
+    align-items: flex-start;
+  }
+
+  &.is-align--bottom {
+    align-items: flex-end;
+  }
+
+  &.is-align--left {
+    justify-content: flex-start;
+  }
+
+  &.is-align--right {
+    justify-content: flex-end;
+  }
+
+  &.is-align--baseline {
+    align-items: baseline;
+  }
+
+  @if ($size) {
+    >* {
+      min-width: 0;
+
+      @for $size from 1 through 15 {
+        &.is-size--#{$size} {
+          flex: #{$size};
+        }
+      }
+
+      &.is-size--grow {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        overflow: auto;
+      }
+
+      &.is-size--content {
+        flex: none;
+      }
+    }
+  }
+}
+
+
+@mixin has-display--inline-flex {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+
+  &.is-align--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.is-align--top {
+    align-items: flex-start;
+  }
+
+  &.is-align--bottom {
+    align-items: flex-end;
+  }
+
+  &.is-align--left {
+    justify-content: flex-start;
+  }
+
+  &.is-align--right {
+    justify-content: flex-end;
+  }
+
+  &.is-align--baseline {
+    align-items: baseline;
+    justify-content: baseline;
+  }
+
+  >* {
+    min-width: 0;
+
+    @for $size from 1 through 15 {
+      &.is-size--#{$size} {
+        flex: #{$size};
+      }
+    }
+
+    &.is-size--grow {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      overflow: auto;
+    }
+
+    &.is-size--content {
+      flex: none;
+    }
+  }
+}
+
+/* Paddings ================================================================= */
+@mixin set-padding($top: false,
+  $right: false,
+  $bottom: false,
+  $left: false,
+  $size: false) {
+  @if $top {
+    padding-top: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+
+  @if $right {
+    padding-right: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+
+  @if $bottom {
+    padding-bottom: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+
+  @if $left {
+    padding-left: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+}
+
+/* Margins ================================================================== */
+@mixin set-margin($top: false,
+  $right: false,
+  $bottom: false,
+  $left: false,
+  $size: false) {
+  @if $top {
+    margin-top: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+
+  @if $right {
+    margin-right: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+
+  @if $bottom {
+    margin-bottom: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+
+  @if $left {
+    margin-left: if($size, var(--spacing--#{$size}), var(--spacing));
+  }
+}
+
+/* Round Corners ============================================================ */
+@mixin set-border-radius($top-left: false,
+  $top-right: false,
+  $bottom-right: false,
+  $bottom-left: false,
+  $size: false) {
+  @if $top-left {
+    border-top-left-radius: if($size, var(--border-radius--#{$size}), var(--border-radius));
+  }
+
+  @if $top-right {
+    border-top-right-radius: if($size, var(--border-radius--#{$size}), var(--border-radius));
+  }
+
+  @if $bottom-right {
+    border-bottom-right-radius: if($size, var(--border-radius--#{$size}), var(--border-radius));
+  }
+
+  @if $bottom-left {
+    border-bottom-left-radius: if($size, var(--border-radius--#{$size}), var(--border-radius));
+  }
+}
+
+/* Overflow ================================================================= */
+@mixin has-overflow--ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -.01em;
+}
+
+caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -.02em;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--brand);
+}
+
+.has-text-align--center {
+  text-align: center;
+}
+
+.co-heading1,
+.co-heading2,
+.co-heading3,
+.co-heading4 {
+  font-weight: 500;
+}
+
+.co-heading1 {
+  font-size: 18px;
+  letter-spacing: .03em;
+}
+
+.co-heading2 {
+  font-size: 16px;
+}
+
+.co-heading3 {
+  font-size: 15px;
+
+  &.is-uppercase {
+    font-size: 14px;
+  }
+}
+
+.co-heading4 {
+  font-size: 13px;
+  letter-spacing: -.01em;
+}
+
+.co-hero-title {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  line-height: 52px;
+
+  &.is-condensed {
+    letter-spacing: -.05em;
+  }
+}
+
+
+.co-body1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.co-body2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+
+  &.is-bold {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}

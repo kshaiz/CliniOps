@@ -1,6 +1,25 @@
-@import "variable.scss";
+
+@import "./common/variable";
+@import "./common/helper";
+@import "./common/normalize";
+@import "./common/media-query";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
 body {
-  color: $primary;
-  font-size: 16px;
+  min-width: 1024px;
 }
+
+@import "./atom/color";
+@import "./atom/box-model";
+@import "./atom/typography";
+
+@import "./molecule/grid";
+
+@import "./organism/header";
+@import "./organism/home";

@@ -1,0 +1,572 @@
+// Box Model ===================================================================
+// .has-height--full {
+//   height: 100%;
+// }
+
+// .has-height--auto {
+//   height: auto;
+// }
+
+// .has-width--full {
+//   width: 100%;
+// }
+
+// .has-width--auto {
+//   flex: none;
+//   max-width: 100%;
+//   width: min-content;
+// }
+
+// .has-display--block {
+//   display: block;
+//   width: 100%;
+// }
+
+// .has-display--inline {
+//   display: inline;
+// }
+
+// .has-display--inline-block {
+//   display: inline-block;
+// }
+
+.has-display--flex {
+  &.is-row {
+    @include has-display--flex--row;
+  }
+
+  &.is-column {
+    @include has-display--flex--column;
+  }
+}
+
+// .has-display--inline-flex {
+//   @include has-display--inline-flex;
+// }
+
+// Paddings ====================================================================
+// .has-padding {
+//   @include set-padding($top: true,
+//     $right: true,
+//     $bottom: true,
+//     $left: true);
+// }
+
+// .has-padding--vertical {
+//   @include set-padding($top: true,
+//     $bottom: true);
+// }
+
+// .has-padding--top {
+//   @include set-padding($top: true);
+// }
+
+// .has-padding--bottom {
+//   @include set-padding($bottom: true);
+// }
+
+// .has-padding--horizontal {
+//   @include set-padding($right: true,
+//     $left: true);
+// }
+
+// .has-padding--left {
+//   @include set-padding($left: true);
+// }
+
+// .has-padding--right {
+//   @include set-padding($right: true);
+// }
+
+// @each $size in $global-size {
+//   .has-padding--#{$size} {
+//     @include set-padding($top: true,
+//       $right: true,
+//       $bottom: true,
+//       $left: true,
+//       $size: #{$size});
+//   }
+
+//   .has-padding--vertical--#{$size} {
+//     @include set-padding($top: true,
+//       $bottom: true,
+//       $size: #{$size});
+//   }
+
+//   .has-padding--top--#{$size} {
+//     @include set-padding($top: true,
+//       $size: #{$size});
+//   }
+
+//   .has-padding--bottom--#{$size} {
+//     @include set-padding($bottom: true,
+//       $size: #{$size});
+//   }
+
+//   .has-padding--horizontal--#{$size} {
+//     @include set-padding($right: true,
+//       $left: true,
+//       $size: #{$size});
+//   }
+
+//   .has-padding--left--#{$size} {
+//     @include set-padding($left: true,
+//       $size: #{$size});
+//   }
+
+//   .has-padding--right--#{$size} {
+//     @include set-padding($right: true,
+//       $size: #{$size});
+//   }
+// }
+
+// .has-no-padding {
+//   @include set-padding($top: true,
+//     $right: true,
+//     $bottom: true,
+//     $left: true,
+//     $size: "zero");
+// }
+
+// .has-no-padding--vertical {
+//   @include set-padding($top: true,
+//     $bottom: true,
+//     $size: "zero");
+// }
+
+// .has-no-padding--top {
+//   @include set-padding($top: true,
+//     $size: "zero");
+// }
+
+// .has-no-padding--bottom {
+//   @include set-padding($bottom: true,
+//     $size: "zero");
+// }
+
+// .has-no-padding--horizontal {
+//   @include set-padding($right: true,
+//     $left: true,
+//     $size: "zero");
+// }
+
+// .has-no-padding--left {
+//   @include set-padding($left: true,
+//     $size: "zero");
+// }
+
+// .has-no-padding--right {
+//   @include set-padding($right: true,
+//     $size: "zero");
+// }
+
+// Margins =====================================================================
+// .has-margin {
+//   @include set-margin($top: true,
+//     $right: true,
+//     $bottom: true,
+//     $left: true);
+// }
+
+// .has-margin--vertical {
+//   @include set-margin($top: true,
+//     $bottom: true);
+// }
+
+// .has-margin--top {
+//   @include set-margin($top: true);
+// }
+
+// .has-margin--bottom {
+//   @include set-margin($bottom: true);
+// }
+
+// .has-margin--horizontal {
+//   @include set-margin($right: true,
+//     $left: true);
+// }
+
+// .has-margin--left {
+//   @include set-margin($left: true);
+// }
+
+// .has-margin--right {
+//   @include set-margin($right: true);
+// }
+
+// @each $size in $global-size {
+//   .has-margin--#{$size} {
+//     @include set-margin($top: true,
+//       $right: true,
+//       $bottom: true,
+//       $left: true,
+//       $size: #{$size});
+//   }
+
+//   .has-margin--vertical--#{$size} {
+//     @include set-margin($top: true,
+//       $bottom: true,
+//       $size: #{$size});
+//   }
+
+//   .has-margin--top--#{$size} {
+//     @include set-margin($top: true,
+//       $size: #{$size});
+//   }
+
+//   .has-margin--bottom--#{$size} {
+//     @include set-margin($bottom: true,
+//       $size: #{$size});
+//   }
+
+//   .has-margin--horizontal--#{$size} {
+//     @include set-margin($right: true,
+//       $left: true,
+//       $size: #{$size});
+//   }
+
+//   .has-margin--left--#{$size} {
+//     @include set-margin($left: true,
+//       $size: #{$size});
+//   }
+
+//   .has-margin--right--#{$size} {
+//     @include set-margin($right: true,
+//       $size: #{$size});
+//   }
+// }
+
+// .has-margin--auto {
+//   @include set-margin($top: true,
+//     $right: true,
+//     $bottom: true,
+//     $left: true,
+//     $size: "auto");
+// }
+
+// .has-margin--vertical--auto {
+//   @include set-margin($top: true,
+//     $bottom: true,
+//     $size: "auto");
+// }
+
+// .has-margin--top--auto {
+//   @include set-margin($top: true,
+//     $size: "auto");
+// }
+
+// .has-margin--bottom--auto {
+//   @include set-margin($bottom: true,
+//     $size: "auto");
+// }
+
+// .has-margin--horizontal--auto {
+//   @include set-margin($right: true,
+//     $left: true,
+//     $size: "auto");
+// }
+
+// .has-margin--left--auto {
+//   @include set-margin($left: true,
+//     $size: "auto");
+// }
+
+// .has-margin--right--auto {
+//   @include set-margin($right: true,
+//     $size: "auto");
+// }
+
+// .has-no-margin {
+//   @include set-margin($top: true,
+//     $right: true,
+//     $bottom: true,
+//     $left: true,
+//     $size: "zero");
+// }
+
+// .has-no-margin--vertical {
+//   @include set-margin($top: true,
+//     $bottom: true,
+//     $size: "zero");
+// }
+
+// .has-no-margin--top {
+//   @include set-margin($top: true,
+//     $size: "zero");
+// }
+
+// .has-no-margin--bottom {
+//   @include set-margin($bottom: true,
+//     $size: "zero");
+// }
+
+// .has-no-margin--horizontal {
+//   @include set-margin($right: true,
+//     $left: true,
+//     $size: "zero");
+// }
+
+// .has-no-margin--left {
+//   @include set-margin($left: true,
+//     $size: "zero");
+// }
+
+// .has-no-margin--right {
+//   @include set-margin($right: true,
+//     $size: "zero");
+// }
+
+// Borders =====================================================================
+// .has-border,
+// .has-border--top,
+// .has-border--left,
+// .has-border--right,
+// .has-border--bottom,
+// .has-border--vertical,
+// .has-border--horizontal {
+//   --border-style: solid;
+//   border-style: var(--border-style);
+//   border-color: var(--c_border);
+// }
+
+// .has-border {
+//   border-width: var(--border-width);
+// }
+
+// .has-border--vertical {
+//   border-top-width: var(--border-width);
+//   border-bottom-width: var(--border-width);
+// }
+
+// .has-border--top {
+//   border-top-width: var(--border-width);
+// }
+
+// .has-border--bottom {
+//   border-bottom-width: var(--border-width);
+// }
+
+// .has-border--horizontal {
+//   border-left-width: var(--border-width);
+//   border-right-width: var(--border-width);
+// }
+
+// .has-border--left {
+//   border-left-width: var(--border-width);
+// }
+
+// .has-border--right {
+//   border-right-width: var(--border-width);
+// }
+
+// .has-border-style--dashed {
+//   --border-style: dashed;
+// }
+
+// .has-border-style--dotted {
+//   --border-style: dotted;
+// }
+
+// .has-no-border {
+//   border: 0;
+// }
+
+// .has-no-border--top {
+//   border-top: 0;
+// }
+
+// .has-no-border--bottom {
+//   border-bottom: 0;
+// }
+
+// .has-no-border--vertical {
+//   border-top: 0;
+//   border-bottom: 0;
+// }
+
+// .has-no-border--left {
+//   border-left: 0;
+// }
+
+// .has-no-border--right {
+//   border-right: 0;
+// }
+
+// .has-no-border--horizontal {
+//   border-left: 0;
+//   border-right: 0;
+// }
+
+// Round Corners ===============================================================
+// .has-border-radius {
+//   @include set-border-radius($top-left: true,
+//     $top-right: true,
+//     $bottom-right: true,
+//     $bottom-left: true);
+// }
+
+// .has-border-radius--top {
+//   @include set-border-radius($top-left: true,
+//     $top-right: true);
+// }
+
+// .has-border-radius--top-left,
+// .has-border-radius--left-top {
+//   @include set-border-radius($top-left: true);
+// }
+
+// .has-border-radius--top-right,
+// .has-border-radius--right-top {
+//   @include set-border-radius($top-right: true);
+// }
+
+// .has-border-radius--bottom {
+//   @include set-border-radius($bottom-right: true,
+//     $bottom-left: true);
+// }
+
+// .has-border-radius--bottom-left,
+// .has-border-radius--left-bottom {
+//   @include set-border-radius($bottom-left: true);
+// }
+
+// .has-border-radius--bottom-right,
+// .has-border-radius--right-bottom {
+//   @include set-border-radius($bottom-right: true);
+// }
+
+// .has-border-radius--left {
+//   @include set-border-radius($top-left: true,
+//     $bottom-left: true);
+// }
+
+// .has-border-radius--right {
+//   @include set-border-radius($top-right: true,
+//     $bottom-right: true);
+// }
+
+// .has-border-radius--full {
+//   @include set-border-radius($top-left: true,
+//     $top-right: true,
+//     $bottom-right: true,
+//     $bottom-left: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--top--full {
+//   @include set-border-radius($top-left: true,
+//     $top-right: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--top-left--full,
+// .has-border-radius--left-top--full {
+//   @include set-border-radius($top-left: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--top-right--full,
+// .has-border-radius--right-top--full {
+//   @include set-border-radius($top-right: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--bottom--full {
+//   @include set-border-radius($bottom-right: true,
+//     $bottom-left: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--bottom-left--full,
+// .has-border-radius--left-bottom--full {
+//   @include set-border-radius($bottom-left: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--bottom-right--full,
+// .has-border-radius--right-bottom--full {
+//   @include set-border-radius($bottom-right: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--left--full {
+//   @include set-border-radius($top-left: true,
+//     $bottom-left: true,
+//     $size: "full");
+// }
+
+// .has-border-radius--right--full {
+//   @include set-border-radius($top-right: true,
+//     $bottom-right: true,
+//     $size: "full");
+// }
+
+// .has-no-border-radius {
+//   @include set-border-radius($top-left: true,
+//     $top-right: true,
+//     $bottom-right: true,
+//     $bottom-left: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--top {
+//   @include set-border-radius($top-left: true,
+//     $top-right: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--top-left,
+// .has-no-border-radius--left-top {
+//   @include set-border-radius($top-left: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--top-right,
+// .has-no-border-radius--right-top {
+//   @include set-border-radius($top-right: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--bottom {
+//   @include set-border-radius($bottom-right: true,
+//     $bottom-left: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--bottom-left,
+// .has-no-border-radius--left-bottom {
+//   @include set-border-radius($bottom-left: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--bottom-right,
+// .has-no-border-radius--right-bottom {
+//   @include set-border-radius($bottom-right: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--left {
+//   @include set-border-radius($top-left: true,
+//     $bottom-left: true,
+//     $size: "zero");
+// }
+
+// .has-no-border-radius--right {
+//   @include set-border-radius($top-right: true,
+//     $bottom-right: true,
+//     $size: "zero");
+// }
+
+// Overflow ====================================================================
+// .has-overflow--ellipsis {
+//   @include has-overflow--ellipsis;
+// }
+
+// .has-overflow--wrap {
+//   white-space: normal;
+//   word-break: break-all;
+// }
+
+// .has-overflow--auto {
+//   overflow: auto;
+// }
