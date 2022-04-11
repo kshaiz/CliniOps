@@ -64,6 +64,43 @@
       width: 100%;
     }
   }
+
+  &.has-sub-menu {
+    .o-hdr__link__sub-menu {
+      display: none;
+    }
+    &:hover {
+      > .o-hdr__link__sub-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+.o-hdr__link__sub-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  background: var(--white);
+  color: var(--black-o75);
+  z-index: 0;
+
+  li {
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+
+    &:hover {
+      color: var(--brand)
+    }
+  }
 }
 
 .o-hdr__separator {
