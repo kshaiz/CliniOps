@@ -8,13 +8,15 @@
   --white-o75: rgba(255, 255, 255, .75);
   --white-o25: rgba(255, 255, 255, .25);
   --black-o25: rgba(0, 0, 0, .25);
+  --black-o50: rgba(0, 0, 0, .50);
   --black-o75: rgba(0, 0, 0, .75);
   --pink400: #EC407A;
   --pink600: #D81B60;
   --pink700: #C2185B;
 
   --link: rgba(0, 108, 255, 1);
-  --gradient-blue: linear-gradient(77.28deg, #045DE9 17.76%, rgba(9, 198, 249, 0.74) 91.19%),
-  linear-gradient(0deg, #045DE9, #045DE9);
+  // --gradient-blue: linear-gradient(77.28deg, #045DE9 17.76%, rgba(9, 198, 249, 0.74) 91.19%),
+  // linear-gradient(0deg, #045DE9, #045DE9);
+  --gradient-blue: linear-gradient(180deg, #526980 0%, #162F4B 100%);
   --gradient-logo: radial-gradient(97.16% 97.16% at 70.24% 100%, #042D43 44.27%, rgba(3, 169, 244, 0.74026) 93.23%);
 }

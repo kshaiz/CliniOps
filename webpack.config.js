@@ -2,13 +2,13 @@
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-    entry: './src/js/main.js',
+    entry: ['./src/js/main.js'],
     plugins: [
         new ESLintPlugin()
     ],
     output: {
         path: __dirname + '/dist/js',
-        filename: 'script.js'
+        filename: 'bundle.js'
     },
     module: {
         rules: [

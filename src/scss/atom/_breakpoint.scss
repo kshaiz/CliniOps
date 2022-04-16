@@ -1,12 +1,10 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .v-lg {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  // Show full menu
   .v-sm {
     display: none !important;
   }
