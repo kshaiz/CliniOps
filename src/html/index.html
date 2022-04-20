@@ -13,7 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
     <link rel="stylesheet" type="text/css" href="./css/home.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -25,8 +26,29 @@
     <module href="/module/hero.html"></module>
     <module href="/module/main.html"></module>
     <module href="/module/footer.html"></module>
-
     <script src="./js/bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".o-hdr__menu__section").hover(
+                function () {
+                    $(this).find('.o-menu__sub-menu').stop(true, true).slideDown('fast');
+                },
+
+                function () {
+                    $(this).find('.o-menu__sub-menu').stop(true, true).slideUp('fast');
+                }
+            );
+
+            $(".o-hdr__menu__section").click(
+                function () {
+                    $('.o-menu__sub-menu').stop(true, true).slideUp('fast');
+                    $(this).find('.o-menu__sub-menu').stop(true, true).slideDown('fast');
+                }
+            );
+
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
         window.cookieconsent.initialise({

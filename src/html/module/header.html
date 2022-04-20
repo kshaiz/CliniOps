@@ -1,56 +1,3 @@
-<style>
-  /*! responsive-nav.js 1.0.39 by @viljamis */
-
-  .nav-collapse ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: block;
-    list-style: none;
-  }
-
-  .nav-collapse li {
-    width: 100%;
-    display: block;
-  }
-
-  .js .nav-collapse {
-    clip: rect(0 0 0 0);
-    max-height: 0;
-    position: absolute;
-    display: block;
-    overflow: hidden;
-    zoom: 1;
-  }
-
-  .nav-collapse.opened {
-    max-height: 9999px;
-  }
-
-  .nav-toggle {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  }
-
-  @media screen and (min-width: 40em) {
-    .js .nav-collapse {
-      position: relative;
-    }
-
-    .js .nav-collapse.closed {
-      max-height: none;
-    }
-
-    .nav-toggle {
-      display: none;
-    }
-  }
-</style>
 <header class="o-hdr">
   <div class="m-container">
     <div class="has-display--flex is-column">
@@ -61,22 +8,30 @@
           <a href="/" class="o-hdr__link">Home</a>
           <a href="/products" class="o-hdr__link">Products</a>
           <a href="/services" class="o-hdr__link">Services</a>
-          <div class="o-menu is-full"> 	
-            <input class="o-menu-checkbox" type="checkbox" id="dropdown3" name="dropdown3"/>
-            <label class="for-dropdown3" for="dropdown3">About</label>
-            <div class="o-menu__dropdown"> 
-              <a href="/mission">Mission</a>
-              <a href="/leadershipTeam">Leadership Team</a>
-              <a href="/careers">Careers</a>
-            </div>
+          <div class="o-hdr__menu__section">
+            <a href="#" class="o-hdr__link">About</a>
+            <ul class="o-menu__sub-menu">
+              <li>
+                <a href="/mission">Mission</a>
+              </li>
+              <li>
+                <a href="/leadershipTeam">Leadership Team</a>
+              </li>
+              <li>
+                <a href="/careers">Careers</a>
+              </li>
+            </ul>
           </div>
-          <div class="o-menu is-full"> 	
-            <input class="o-menu-checkbox" type="checkbox" id="dropdown4" name="dropdown4"/>
-            <label class="for-dropdown4" for="dropdown4">Media</label>
-            <div class="o-menu__dropdown"> 
-              <a href="/newsroom">Newsroom</a>
-              <a href="/blogs">Blogs</a>
-            </div>
+          <div class="o-hdr__menu__section">
+            <a href="#" class="o-hdr__link">Media</a>
+            <ul class="o-menu__sub-menu">
+              <li>
+                <a href="/newsroom">Newsroom</a>
+              </li>
+              <li>
+                <a href="/blogs">Blogs</a>
+              </li>
+            </ul>
           </div>
           <a href="/contact" class="o-hdr__link">Contact</a>
         </nav>
@@ -89,23 +44,26 @@
         </nav>
       </div>
       <div class="v-sm" style="padding-right: 10px;">
-        <div class="o-menu"> 	
-          <input class="o-menu-checkbox" type="checkbox" id="dropdown" name="dropdown"/>
-          <label class="for-dropdown" for="dropdown"><i class="material-icons" style="font-size: 32px;">menu</i><i class="material-icons" style="font-size: 32px;">close</i></label>
-          <div class="o-menu__dropdown"> 
+        <div class="o-menu">
+          <input class="o-menu-checkbox" type="checkbox" id="dropdown" name="dropdown" />
+          <label class="for-dropdown" for="dropdown"><i class="material-icons" style="font-size: 32px;">menu</i><i
+              class="material-icons" style="font-size: 32px;">close</i></label>
+          <div class="o-menu__dropdown">
             <a href="/">Home</a>
             <a href="/products">Products</a>
             <a href="/services">Services</a>
-            <input class="o-menu-checkbox-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-            <label class="for-dropdown-sub" for="dropdown-sub">About <span class="o-menu-sub-toggle-icon"></span></label>
-            <div class="o-menu__dropdown-sub"> 
+            <input class="o-menu-checkbox-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+            <label class="for-dropdown-sub" for="dropdown-sub">About <span
+                class="o-menu-sub-toggle-icon"></span></label>
+            <div class="o-menu__dropdown-sub">
               <a href="/mission">Mission</a>
               <a href="/leadershipTeam">Leadership Team</a>
               <a href="/careers">Careers</a>
             </div>
-            <input class="o-menu-checkbox-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2"/>
-            <label class="for-dropdown-sub" for="dropdown-sub2">Media <span class="o-menu-sub-toggle-icon"></span></label>
-            <div class="o-menu__dropdown-sub"> 
+            <input class="o-menu-checkbox-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2" />
+            <label class="for-dropdown-sub" for="dropdown-sub2">Media <span
+                class="o-menu-sub-toggle-icon"></span></label>
+            <div class="o-menu__dropdown-sub">
               <a href="/newsroom">Newsroom</a>
               <a href="/blogs">Blogs</a>
             </div>

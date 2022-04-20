@@ -77,17 +77,21 @@
   }
 }
 
-.o-hdr__link__sub-menu {
+.o-hdr__menu__section {
+  position: relative;
+  display: flex;
+}
+
+.o-menu__sub-menu {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 29px;
   left: -20px;
   border-radius: 10px;
   margin: 0;
   padding: 10px;
   list-style: none;
   background: var(--white);
-  color: var(--black-o75);
   z-index: 0;
 
   li {
@@ -97,8 +101,12 @@
     font-size: 16px;
     line-height: 18.75px;
 
-    &:hover {
-      color: var(--brand)
+    a {
+      color: var(--black-o75);
+
+      &:hover {
+        color: var(--brand);
+      }
     }
   }
 }
